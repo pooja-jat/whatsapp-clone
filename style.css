@@ -10,7 +10,7 @@
 .main-container {
   height: auto;
   width: 100%;
-  padding: 0 40px;
+  /* padding: 0 40px; */
   background-color: #fcf5eb;
 }
 
@@ -82,7 +82,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 90px 0;
+  padding: 90px 0px;
+  margin: 0 40px;
 }
 
 .container1 {
@@ -106,6 +107,7 @@
   color: white;
   font-weight: 500;
 }
+
 .left-box p {
   font-size: 20px;
   color: white;
@@ -146,7 +148,6 @@
 }
 
 .container3 {
-  /* padding: 60px 280px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -161,27 +162,38 @@
   height: auto;
   width: 100%;
   display: flex;
+  padding: 60px 0px;
 }
 
 .left {
-  gap: 20px;
   padding: 80px;
   width: 50%;
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 
 .left p {
-  font-size: 4.5em;
+  font-size: 3em;
 }
 
 .left p:nth-last-child(2) {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 a:hover {
   color: green;
 }
+
+.right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.right img {
+  padding: 0px 60px;
+}
+
 .container6 {
   background-color: rgb(17, 16, 16);
   height: auto;
@@ -191,8 +203,7 @@ a:hover {
 
 .left1 {
   width: 50%;
-  margin-block: 40px;
-  margin-inline: 80px;
+  padding: 80px;
 }
 
 .right1 {
@@ -207,25 +218,28 @@ a:hover {
 }
 
 .right1 p {
-  font-size: 4.5em;
+  font-size: 3em;
 }
 .right1 p:nth-last-child(2) {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 .right1 p em {
   color: rgb(17, 173, 106);
 }
 
 .container7 {
-  height: auto;
   width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
 }
 
 .left2 {
   gap: 20px;
   padding: 80px;
-  width: 50%;
+  /* width: 50%; */
+  width: 600px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -233,14 +247,28 @@ a:hover {
 }
 
 .right2 {
-  margin-block: 80px;
+  /* margin-block: 80px; */
 }
+
+.right2 div {
+  height: 620px;
+  width: 70%;
+  background-image: url(https://scontent.whatsapp.net/v/t39.8562-34/318716844_644367477472796_6799212725643495984_n.png?ccb=1-7&_nc_sid=73b08c&_nc_ohc=Yd7zNGYGgsUQ7kNvgG_uSlA&_nc_ht=scontent.whatsapp.net&_nc_gid=AnliHZ3Z6z28czWIO2rurSc&oh=01_Q5AaIO3g4_r83mh5BJPawNmIdblQkOznOFIw_hPtcy44WiP5&oe=66FF6F65);
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: top;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .left2 p {
-  font-size: 4.5em;
+  font-size: 3.5em;
 }
 
 .left2 p:nth-last-child(2) {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 .container8 {
   height: auto;
