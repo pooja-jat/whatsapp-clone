@@ -465,9 +465,11 @@ footer {
 
   .container1 {
     display: flex;
-    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
-    padding: 0px;
+    padding: 0 20px;
     max-width: 300px;
   }
   .container1 .left-box {
@@ -493,6 +495,15 @@ footer {
   .bar2 button {
     margin-bottom: 40px;
   }
+
+  .right-box {
+    width: 100%;
+  }
+
+  .right-box div:nth-child(1) img {
+    width: 100%;
+  }
+
   .right-box div:nth-child(3) {
     display: none;
   }
@@ -513,6 +524,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0px;
   }
 
   .container2 img {
@@ -523,6 +535,11 @@ footer {
     align-items: center;
     justify-content: center;
     width: 300px;
+  }
+
+  .right21 {
+    /* width: 50%; */
+    margin-block: 40px;
   }
 
   .container3 p {
@@ -542,6 +559,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0px 0px;
   }
   .container4 .hidden {
     display: flex;
@@ -578,6 +596,8 @@ footer {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 40px 0 0 0;
   }
 
   .left1 img {
@@ -634,7 +654,6 @@ footer {
     width: 100%;
     height: auto;
     display: flex;
-    align-items: center;
     flex-direction: column;
   }
   .left21 {
