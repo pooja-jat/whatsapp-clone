@@ -102,7 +102,6 @@
 }
 
 .left-box h1 {
-  width: 400px;
   font-size: 80px;
   color: white;
   font-weight: 500;
@@ -210,7 +209,7 @@ a:hover {
 }
 
 .left1 {
-  width: 50%;
+  width: 100%;
   padding: 80px;
 }
 
@@ -358,8 +357,15 @@ a:hover {
   height: 100%;
 }
 
-.container10 div h5 {
-  margin-bottom: 20px;
+.container10-child {
+  display: flex;
+  flex-direction: row !important;
+  /* flex-wrap: wrap !important; */
+  gap: 20px !important;
+  justify-content: space-between;
+}
+
+.container10-child div {
 }
 
 .container10 div button {
@@ -443,15 +449,40 @@ footer {
     display: flex;
     align-items: center;
   }
+
+  .bar button {
+    padding: 0px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bar button span {
+    display: none;
+  }
+
   .container1 {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    padding: 0px;
+    max-width: 300px;
   }
   .container1 .left-box {
     gap: 10px;
   }
 
+  .right2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .right2 div img {
+    width: 300px;
+  }
   .container1 h1 {
     font-size: 2.5em;
   }
@@ -473,6 +504,11 @@ footer {
   .right-box div:nth-child(5) {
     display: none;
   }
+
+  .right img {
+    padding: 0px 0px;
+  }
+
   .container2 {
     display: flex;
     align-items: center;
@@ -486,11 +522,12 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 300px;
   }
 
   .container3 p {
     font-size: 24px;
-    margin-block: 40px;
+    margin: 40px 20px;
   }
   .container3 p {
     max-width: none;
@@ -510,6 +547,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 300px;
   }
   .container5 {
     display: flex;
@@ -542,6 +580,10 @@ footer {
     align-items: center;
   }
 
+  .left1 img {
+    width: 300px;
+  }
+
   .right1 {
     width: 100%;
     display: flex;
@@ -554,7 +596,7 @@ footer {
     align-items: center;
     flex-direction: column;
   }
-  .left2{
+  .left2 {
     width: 100%;
     height: auto;
     display: flex;
@@ -595,7 +637,7 @@ footer {
     align-items: center;
     flex-direction: column;
   }
-  .left21{
+  .left21 {
     width: 100%;
     height: auto;
     display: flex;
@@ -608,29 +650,76 @@ footer {
   .left p:nth-last-child(2) {
     font-size: 16px;
   }
-  .container10{
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-footer{
-width: 100%;
-display: flex;
-align-items: center;
-justify-content: space-between;
-}
-
-.last1{
- display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.last2{
-display: none;
-}
+  .container10 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    text-align: center;
+    gap: 40px;
   }
 
+  .border4 {
+    width: 100%;
+    border-top: 1px solid rgb(69, 69, 69);
+  }
+
+  .solution {
+    width: 100%;
+    height: auto !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container10-child {
+    width: 100%;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 80px !important;
+  }
+
+  .container10-child div {
+    width: 100%;
+    padding: 0px;
+
+    /* width: 30%; */
+  }
+
+  .container10-child div h5 {
+    font-size: 12px;
+  }
+
+  .container10-child div h3 {
+    font-size: 16px;
+  }
+
+  .container10 div img {
+    display: none;
+  }
+
+  footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .last1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px !important;
+    height: auto !important;
+  }
+
+  .last2 {
+    display: none !important  ;
+  }
+}
