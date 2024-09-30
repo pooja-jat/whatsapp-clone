@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Whatsapp clone</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- <style>
-      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-    </style> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -52,7 +50,7 @@
               </button>
             </div>
           </div>
-          <div class="right-box">
+          <div class="right-box" data-aos="fade-up">
             <div>
               <img src="./download.png2.png" width="300px" alt="" />
             </div>
@@ -80,11 +78,12 @@
         <p>* Data charges may apply. Contact your provider for details.</p>
       </div>
       <!-- container2 -->
-      <div class="container2">
+      <div class="container2" data-aos="fade-up">
         <img src="./download.png11.png" alt="" width="100%" />
+        <img class="hide" src="./imgn.png" />
       </div>
       <!-- container3 -->
-      <div class="container3">
+      <div class="container3" data-aos="fade-up">
         <p>
           With private messaging and calling, you can be yourself, speak freely
           and feel close to the most important people in your life no matter
@@ -93,12 +92,12 @@
       </div>
 
       <!-- container4 -->
-      <div class="container4">
+      <div class="container4" data-aos="fade-up" data-aos="fade-up">
         <img src="./download.png12.png" alt="" width="100%" />
+        <img class="hidden" src="./img2.png" />
       </div>
-
       <!-- container5 -->
-      <div class="container5">
+      <div class="container5" data-aos="fade-up">
         <div class="left">
           <p>Never miss a moment with voice and video calls</p>
           <p>
@@ -113,11 +112,11 @@
         </div>
       </div>
       <!-- container6 -->
-      <div class="container6">
+      <div class="container6" data-aos="fade-up">
         <div class="left1">
           <img src="./download.png14.png" alt="" />
         </div>
-        <div class="right1">
+        <div class="right1" data-aos="fade-up">
           <p class="content">Speak <br /><em>freely</em></p>
           <p>
             With end-to-end encryption, your personal messages and calls are
@@ -128,7 +127,7 @@
         </div>
       </div>
       <!-- container7 -->
-      <div class="container7">
+      <div class="container7" data-aos="fade-up">
         <div class="left2">
           <p>Keep in touch with your groups</p>
           <p>
@@ -142,11 +141,10 @@
           <div class="try1">
             <img src="./download.png21.png" width="370" alt="" />
           </div>
-          <!-- <img src="./download.png22.png" alt="" /> -->
         </div>
       </div>
       <!--container8  -->
-      <div class="container8">
+      <div class="container8" data-aos="fade-up">
         <div class="left11">
           <img src="./download.png31.png" alt="" />
           <img class="png" src="./download.png32.png" alt="" width="50%" />
@@ -165,7 +163,7 @@
         </div>
       </div>
       <!-- container9 -->
-      <div class="container9">
+      <div class="container9" data-aos="fade-up">
         <div class="left21">
           <p>
             Transform <br />
@@ -183,44 +181,72 @@
           <img src="./31.png" alt="" />
         </div>
       </div>
-      <!-- container10 -->
-      <div class="container10">
-        <div>
-          <img style="width: 200px" src="./images.png1.png" alt="" />
-          <button>
-            Download
-            <i class="fa-solid fa-arrow-down"> </i>
-          </button>
-        </div>
-        <div>
-          <h5>What we do</h5>
-          <h3>Features</h3>
-          <h3>Blog</h3>
-          <h3>Security</h3>
-          <h3>For Business</h3>
-        </div>
-        <div>
-          <h5>Who we are</h5>
-          <h3>About us</h3>
-          <h3>careers</h3>
-          <h3>Brand Center</h3>
-          <h3>Privacy</h3>
-        </div>
-        <div>
-          <h5>Use whatsapp</h5>
-          <h3>Android</h3>
-          <h3>Iphone</h3>
-          <h3>Mac/PC</h3>
-          <h3>WhatsApp Web</h3>
-        </div>
-        <div>
-          <h5>Need Help?</h5>
-          <h3>Contact Us</h3>
-          <h3>Help Center</h3>
-          <h3>Download</h3>
-          <h3>Security Advisories</h3>
-        </div>
+    </div>
+    <!-- container10 -->
+    <div class="container10">
+      <div>
+        <img
+          src="https://static.whatsapp.net/rsrc.php/yZ/r/JvsnINJ2CZv.svg"
+          alt=""
+        />
+        <button>
+          Download
+          <i class="fa-solid fa-arrow-down"> </i>
+        </button>
+      </div>
+      <div>
+        <h5>What we do</h5>
+        <h3>Features</h3>
+        <h3>Blog</h3>
+        <h3>Security</h3>
+        <h3>For Business</h3>
+      </div>
+      <div>
+        <h5>Who we are</h5>
+        <h3>About us</h3>
+        <h3>careers</h3>
+        <h3>Brand Center</h3>
+        <h3>Privacy</h3>
+      </div>
+      <div>
+        <h5>Use whatsapp</h5>
+        <h3>Android</h3>
+        <h3>Iphone</h3>
+        <h3>Mac/PC</h3>
+        <h3>WhatsApp Web</h3>
+      </div>
+      <div>
+        <h5>Need Help?</h5>
+        <h3>Contact Us</h3>
+        <h3>Help Center</h3>
+        <h3>Download</h3>
+        <h3>Security Advisories</h3>
       </div>
     </div>
+    <div class="hrline">
+      <hr />
+    </div>
+
+    <footer>
+      <div class="last1">
+        <p>2024 © WhatsApp LLC</p>
+        <p>Terms & Privacy Policy</p>
+        <p>Sitemap</p>
+      </div>
+
+      <div class="last2">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+      </div>
+      <div>
+        <button class="btn2">English</button>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
