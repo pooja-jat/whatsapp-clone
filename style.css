@@ -344,14 +344,23 @@ a:hover {
   align-items: center;
   background-color: #111b21;
   color: white;
-  gap: 100px;
+  flex-direction: column;
+   gap: 100px;
   padding: 100px 0;
+}
+.solution {
+  width: 100%;
+  height: auto !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column;  */
 }
 
 .container10 div {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
+  align-items: center;
   justify-content: space-between;
   gap: 20px;
   height: 100%;
@@ -360,12 +369,8 @@ a:hover {
 .container10-child {
   display: flex;
   flex-direction: row !important;
-  /* flex-wrap: wrap !important; */
   gap: 20px !important;
   justify-content: space-between;
-}
-
-.container10-child div {
 }
 
 .container10 div button {
@@ -376,10 +381,9 @@ a:hover {
   border: 1px solid black;
   font-size: 20px;
 }
-
-.container10 div:first-child {
+/* .container10 div:first-child {
   height: 200px;
-}
+} */
 
 footer {
   background-color: #111b21;
@@ -387,14 +391,16 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px;
+   padding: 40px; 
+  flex-direction: row;
 }
 
 .last1 {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
+  align-items: flex-start;
+  /* justify-content: space-between; */
+  flex-direction: row;
+  gap: 0px; 
 }
 
 .last2 {
@@ -402,6 +408,8 @@ footer {
   align-items: center;
   justify-content: space-between;
   gap: 30px;
+  flex-direction: row;
+  font-size: 20px;
 }
 
 .btn2 {
@@ -418,11 +426,13 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 .hrline hr {
   width: 80%;
   border: 1px solid #57c47f;
   opacity: 0.3;
+  flex-direction: column;
 }
 
 @media (max-width: 768px) {
@@ -704,12 +714,12 @@ footer {
     gap: 80px !important;
   }
 
-  .container10-child div {
+   .container10-child div {
     width: 100%;
     padding: 0px;
+   }
 
-    /* width: 30%; */
-  }
+
 
   .container10-child div h5 {
     font-size: 12px;
