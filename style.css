@@ -10,12 +10,10 @@
 .main-container {
   height: auto;
   width: 100%;
-  /* padding: 0 40px; */
   background-color: #fcf5eb;
 }
 
 .navbar {
-  /* height: 80px; */
   position: fixed;
   z-index: 9999;
   backdrop-filter: blur(4px);
@@ -253,10 +251,6 @@ a:hover {
   justify-content: center;
 }
 
-.right2 {
-  /* margin-block: 80px; */
-}
-
 .right2 div {
   height: 620px;
   width: 70%;
@@ -340,21 +334,16 @@ a:hover {
 .container10 {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background-color: #111b21;
   color: white;
-  flex-direction: column;
-   gap: 100px;
+  flex-direction: row;
   padding: 100px 0;
 }
 .solution {
-  width: 100%;
-  height: auto !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* flex-direction: column;  */
+  width: 20%;
+  gap: 100px !important;
 }
 
 .container10 div {
@@ -367,6 +356,8 @@ a:hover {
 }
 
 .container10-child {
+  padding: 40px;
+  width: 80%;
   display: flex;
   flex-direction: row !important;
   gap: 20px !important;
@@ -383,7 +374,7 @@ a:hover {
 }
 /* .container10 div:first-child {
   height: 200px;
-} */
+}  */
 
 footer {
   background-color: #111b21;
@@ -391,7 +382,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-   padding: 40px; 
+  padding: 40px;
   flex-direction: row;
 }
 
@@ -400,7 +391,7 @@ footer {
   align-items: flex-start;
   /* justify-content: space-between; */
   flex-direction: row;
-  gap: 0px; 
+  gap: 0px;
 }
 
 .last2 {
@@ -714,12 +705,10 @@ footer {
     gap: 80px !important;
   }
 
-   .container10-child div {
+  .container10-child div {
     width: 100%;
     padding: 0px;
-   }
-
-
+  }
 
   .container10-child div h5 {
     font-size: 12px;
